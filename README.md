@@ -1,4 +1,4 @@
-# zhihu-daily
+# zhihu-daily-vue
 
 > 使用 vue-cli + vuex + vue-router + vue-carbon 实现的知乎日报
 

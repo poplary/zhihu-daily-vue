@@ -4,7 +4,8 @@ import Vue from 'vue'
 Vue.use(Vuex)
 
 const state = {
-  apiUrl: 'http://zhihu.api.me/api/',
+  // apiUrl: 'http://zhihu.api.me/api/',
+  apiUrl: 'http://api.ipoplary.com/api/',
   latestApi: 'zhihu/latest',
   historyApi: 'zhihu/day/',
   activePage: '',

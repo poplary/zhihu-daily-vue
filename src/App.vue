@@ -45,4 +45,8 @@ ul {
 li {
   list-style-type: none;
 }
+
+div.vc-page-content {
+  padding: 50px 0 50px 0;
+}
 </style>

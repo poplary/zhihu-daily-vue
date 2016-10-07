@@ -1,8 +1,6 @@
 <template>
   <vc-header></vc-header>
-    <div class="content">
       <slot></slot>
-    </div>
   <vc-footer></vc-footer>
 </template>
 
@@ -16,9 +14,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-div.content {
-  padding: 50px 0 50px 0;
-}
-</style>

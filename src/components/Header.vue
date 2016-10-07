@@ -19,7 +19,7 @@ export default {
     }
   },
   ready () {
-    if (this.routeName === 'index' || routeName === 'history') {
+    if (this.routeName === 'index' || this.routeName === 'history') {
       this.title = '知乎日报'
     } else if (this.routeName === 'mine') {
       this.title = '其他'

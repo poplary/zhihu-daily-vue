@@ -2,6 +2,10 @@ export const zhihuDailyList = (state) => {
   return state.zhihuDailyList
 }
 
+export const zhihuDailyCount = (state) => {
+  return state.zhihuDailyCount
+}
+
 export const historyList = (state) => {
   return state.historyList
 }

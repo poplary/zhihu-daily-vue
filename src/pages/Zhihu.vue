@@ -22,13 +22,14 @@
 import Layout from './Layout'
 import ZhihuCard from '../components/ZhihuCard'
 import { getLatestList, getMore } from '../vuex/actions'
-import { zhihuDailyList } from '../vuex/getters'
+import { zhihuDailyList, zhihuDailyCount } from '../vuex/getters'
 
 export default {
   vuex: {
     // 数据可以直接使用
     getters: {
-      zhihuDailyList
+      zhihuDailyList,
+      zhihuDailyCount
     },
     // 方法可以直接调用
     actions: {
@@ -44,7 +45,9 @@ export default {
   },
   ready () {
     // 获取最新的知乎日报数据
-    this.getLatestList()
+    if (this.zhihuDailyCount < 1) {
+      this.getLatestList()
+    }
   }
 }
 </script>

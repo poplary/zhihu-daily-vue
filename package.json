@@ -17,7 +17,8 @@
     "vue-carbon": "^0.4.2",
     "vue-resource": "^1.0.2",
     "vue-router": "^0.7.13",
-    "vuex": "^1.0.0-rc.2"
+    "vuex": "^1.0.0-rc.2",
+    "vuex-router-sync": "^2.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

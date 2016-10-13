@@ -31,6 +31,7 @@ body {
   font-family: Source Sans Pro, Helvetica, sans-serif;
   /*text-align: center;*/
   width: 100%;
+  height: 100%;
 }
 
 #app a {
@@ -48,5 +49,7 @@ li {
 
 div.vc-page-content {
   padding: 50px 0 50px 0;
+  min-height: 100%;
 }
+
 </style>

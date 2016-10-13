@@ -1,6 +1,8 @@
 # zhihu-daily-vue
 
-> 使用 vue-cli + vuex + vue-router + vue-carbon 实现的知乎日报
+> 使用 [vue-cli](https://github.com/vuejs/vue-cli)  + [vuex](https://github.com/vuejs/vuex) + [vue-router](https://github.com/vuejs/vue-router) + [vue-carbon](https://github.com/myronliu347/vue-carbon) 实现的知乎日报
+
+API: [zhihu-daily-lumen](https://github.com/poplary/zhihu-daily-lumen)
 
 ## Build Setup
 

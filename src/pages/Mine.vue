@@ -1,6 +1,6 @@
 <template>
   <layout>
-    <content>
+    <content-block>
       <card>
         <card-header>
           <card-content>
@@ -10,7 +10,7 @@
           </card-content>
         </card-header>
       </card>
-    </content>
+    </content-block>
   </layout>
 </template>
 

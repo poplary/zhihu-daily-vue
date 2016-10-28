@@ -13,10 +13,9 @@ export const getLatestList = ({ dispatch, state }) => {
 }
 
 export const getMore = ({ dispatch, state }) => {
-  var url = state.apiUrl + state.latestApi
-  var sendData = {'skip': state.zhihuDailyCount}
+  var url = state.zhihuDailyNextUrl
 
-  Vue.http.jsonp(url, {'params': sendData})
+  Vue.http.jsonp(url)
     .then(function (response) {
       dispatch('GET_MORE', response)
     })

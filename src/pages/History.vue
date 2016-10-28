@@ -1,6 +1,6 @@
 <template>
   <layout>
-    <content>
+    <content-block>
       <card>
         <card-content>
           <date-select label="" :limit="[{type:'fromto',from:'2015-01-01'}]" placeholder="选择日期" :value="historyDate" v-on:input-change="setHistoryDate"></date-select>
@@ -17,7 +17,7 @@
           </zhihu-card>
         </li>
       </ul>
-    </content>
+    </content-block>
   </layout>
 </template>
 <script>

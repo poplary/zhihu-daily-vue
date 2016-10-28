@@ -1,17 +1,17 @@
 <template>
   <layout>
-    <content v-el:scroller>
-          <zhihu-card
-            :image="item.image"
-            :url="item.url"
-            :title="item.title"
-            :date="item.date"
-             v-for="item in zhihuDailyList"
-          >
-          </zhihu-card>
+    <content-block v-el:scroller>
+      <zhihu-card
+        :image="item.image"
+        :url="item.url"
+        :title="item.title"
+        :date="item.date"
+         v-for="item in zhihuDailyList"
+      >
+      </zhihu-card>
       <button raised v-on:click="getMore">more</button>
       <!-- <infinite-scroll :trigger="$els.scroller" @load="loadMore" :loading="pageLoading"></infinite-scroll> -->
-    </content>
+    </content-block>
   </layout>
 </template>
 

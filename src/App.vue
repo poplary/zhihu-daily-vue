@@ -23,13 +23,11 @@ body {
   height: 100%;
   justify-content: center;
   align-items: flex-start;
-  /*margin: 0;*/
 }
 
 #app {
   color: #2c3e50;
   font-family: Source Sans Pro, Helvetica, sans-serif;
-  /*text-align: center;*/
   width: 100%;
   height: 100%;
 }
@@ -47,9 +45,9 @@ li {
   list-style-type: none;
 }
 
-div.vc-page-content {
-  padding: 50px 0 50px 0;
-  min-height: 100%;
+div.vc-content-block {
+  padding: 40px 0 30px 0;
+  min-height: 90%;
 }
 
 </style>

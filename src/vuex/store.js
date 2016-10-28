@@ -4,30 +4,32 @@ import Vue from 'vue'
 Vue.use(Vuex)
 
 const state = {
-  // apiUrl: 'http://zhihu.api.me/api/',
-  apiUrl: 'https://api.ipoplary.com/api/',
+  apiUrl: 'http://api.zhihu.dev/',
   latestApi: 'zhihu/latest',
-  historyApi: 'zhihu/day/',
+  historyApi: 'zhihu/history/',
   activePage: '',
   zhihuDailyList: [],
   zhihuDailyCount: 0,
+  zhihuDailyNextUrl: '',
   historyList: [],
   historyDate: ''
 }
 
 const mutations = {
   GET_LATEST_LIST (state, response) {
-    state.zhihuDailyList = response.data.list
-    state.zhihuDailyCount = response.data.list.length
+    state.zhihuDailyList = response.data.data
+    state.zhihuDailyCount = response.data.meta.pagination.count
+    state.zhihuDailyNextUrl = response.data.meta.pagination.links.next
   },
 
   GET_MORE (state, response) {
-    state.zhihuDailyList = state.zhihuDailyList.concat(response.data.list)
-    state.zhihuDailyCount += response.data.list.length
+    state.zhihuDailyList = state.zhihuDailyList.concat(response.data.data)
+    state.zhihuDailyCount += response.data.meta.pagination.count
+    state.zhihuDailyNextUrl = response.data.meta.pagination.links.next
   },
 
   GET_HISTORY_LIST (state, response) {
-    state.historyList = response.data.list
+    state.historyList = response.data.data
   },
 
   SET_HISTORY_DATE (state, date) {

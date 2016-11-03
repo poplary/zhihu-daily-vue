@@ -1,0 +1,4 @@
+export const GET_LATEST_LIST = 'GET_LATEST_LIST'
+export const GET_MORE = 'GET_MORE'
+export const GET_HISTORY_LIST = 'GET_HISTORY_LIST'
+export const SET_HISTORY_DATE = 'SET_HISTORY_DATE'

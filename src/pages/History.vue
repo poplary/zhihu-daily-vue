@@ -1,23 +1,21 @@
 <template>
   <layout>
-    <card v-for="item in latestList" :title="item.title" :date="item.date" :image="item.image"></card>
+    history
   </layout>
 </template>
 
 <script>
 import layout from '../components/Layout'
-import card from '../components/Card'
 import { mapActions } from 'vuex'
 
 export default {
   data () {
     return {
-      latestList: []
+      latestList: this.$store.getters.zhihuDailyList
     }
   },
   components: {
-    layout,
-    card
+    layout
   },
   mounted () {
     this.$store.dispatch('getLatestList')
@@ -26,11 +24,6 @@ export default {
     ...mapActions([
       'getLatestList'
     ])
-  },
-  computed: {
-    latestList () {
-      return this.$store.getters.zhihuDailyList
-    }
   }
 }
 </script>

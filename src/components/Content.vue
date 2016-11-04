@@ -9,7 +9,12 @@
 
 <style>
 div.zh-content {
-  padding: 50px 0 50px 0;
+  padding: 55px 0 55px 0;
   min-height: 80%;
+  
+  /** flex 布局 **/
+  display: inline-flex;
+  align-items: align-content;
+  flex-wrap: wrap;
 }
 </style>

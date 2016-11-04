@@ -8,3 +8,4 @@ selenium-debug.log
 .yarn.lock
 .vscode/
 npm-debug.log*
+.yarn.lock

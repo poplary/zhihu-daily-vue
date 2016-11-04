@@ -6,6 +6,7 @@ import store from './store'
 import { sync } from 'vuex-router-sync'
 import routes from './routes'
 import FastClick from 'fastclick'
+import 'font-awesome/css/font-awesome.css'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)

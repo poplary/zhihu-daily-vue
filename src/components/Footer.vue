@@ -1,15 +1,21 @@
 <template>
   <footer>
-    <router-link class="footer-tab" v-bind:to="{ name: 'index'}" active-class="active" exact>tab1</router-link>
+    <router-link class="footer-tab" v-bind:to="{ name: 'index'}" active-class="active" exact>
+      <i class="fa fa-lg fa-home"></i>
+    </router-link>
 
-    <router-link class="footer-tab" v-bind:to="{ name: 'history'}" active-class="active" exact>tab2</router-link>
+    <router-link class="footer-tab" v-bind:to="{ name: 'history'}" active-class="active" exact>
+      <i class="fa fa-lg fa-list"></i>
+    </router-link>
 
-    <router-link class="footer-tab" v-bind:to="{ name: 'info'}" active-class="active" exact>tab3</router-link>
+    <router-link class="footer-tab" v-bind:to="{ name: 'info'}" active-class="active" exact>
+      <i class="fa fa-lg fa-user"></i>
+    </router-link>
 
   </footer>
 </template>
 
-<style>
+<style scoped>
 footer {
   position: fixed;
   right: 0;

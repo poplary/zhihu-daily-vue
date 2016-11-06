@@ -7,5 +7,6 @@ test/e2e/reports
 selenium-debug.log
 .yarn.lock
 .vscode/
+.idea/
 npm-debug.log*
-.yarn.lock
+yarn.lock

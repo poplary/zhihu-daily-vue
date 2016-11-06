@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <zh-header></zh-header>
+    <zh-header :title="title"></zh-header>
     <zh-content>
       <slot></slot>
     </zh-content>
@@ -13,6 +13,9 @@ import zhHeader from './Header'
 import zhFooter from './Footer'
 import zhContent from './Content'
 export default {
+  props: [
+    'title'
+  ],
   components: {
     zhHeader,
     zhFooter,

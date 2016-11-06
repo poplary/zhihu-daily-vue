@@ -1,20 +1,23 @@
 <template>
   <header>
-    <div class="header-icon">
-      <i class="fa fa-lg fa-arrow-left"></i>
-    </div>
+    <router-link class="footer-tab" v-bind:to="{ name: 'index'}" exact>
+      <div class="header-icon">
+        <i class="fa fa-lg fa-home"></i>
+      </div>
+    </router-link>
 
     <div class="header-title">
-      header
+      {{ title }}
     </div>
-
-    <div class="header-icon">
-    </div>
-    
   </header>
 </template>
 
 <script>
+export default {
+  props: [
+    'title'
+  ]
+}
 </script>
 
 <style>
@@ -29,6 +32,7 @@ header {
   width: 100%;
   background-color: #41b883;
   font-size: 24px;
+  font-weight: 900;
   color: #eee;
 
   /** 圆角 **/
@@ -41,12 +45,20 @@ header {
 
   /** flex 布局 **/
   display: inline-flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 div.header-icon {
-  padding: 0 10px 0 10px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
 </style>

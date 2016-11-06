@@ -15,6 +15,8 @@ html, body, #app {
 body {
   margin: 0;
   background-color: #eee;
+  display: flex;
+  align-content: flex-start;
 }
 
 #app {

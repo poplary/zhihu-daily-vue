@@ -2,8 +2,10 @@ import * as types from '../mutation-types'
 
 let state = {
   // apiUrl: 'http://api.zhihu.dev/',
-  apiUrl: 'https://api.ipoplary.com/',
-  latestApi: 'zhihu/latest',
+  // apiUrl: 'https://api.ipoplary.com/',
+  // latestApi: 'zhihu/latest',
+  // apiUrl: 'http://localhost:' +  + '/json/',
+  // latestApi: 'latest.json',
   historyApi: 'zhihu/history/',
   activePage: '',
   zhihuDailyList: [],

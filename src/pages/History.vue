@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout title="历史日报">
     history
   </layout>
 </template>

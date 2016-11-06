@@ -7,7 +7,7 @@ Vue.use(VueResource)
 
 export const getLatestList = ({ commit }) => {
   if (zhihu.state.zhihuDailyCount < 1) {
-    let url = zhihu.state.apiUrl + zhihu.state.latestApi
+    let url = process.env.API_URL + process.env.LATEST_LIST
 
     Vue.http.jsonp(url)
         .then(function (response) {

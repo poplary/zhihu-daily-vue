@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout title="知乎日报">
     <card v-for="item in latestList" :title="item.title" :date="item.date" :image="item.image"></card>
   </layout>
 </template>
@@ -36,5 +36,8 @@ export default {
 </script>
 
 <style>
-
+div.zh-content {
+  display: inline-flex;
+  align-content: flex-start;  
+}
 </style>

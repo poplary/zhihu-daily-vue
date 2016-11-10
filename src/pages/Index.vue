@@ -1,6 +1,9 @@
 <template>
   <layout title="知乎日报">
-    <card v-for="item in latestList" :title="item.title" :date="item.date" :image="item.image"></card>
+    <div class="list">
+      <card v-for="item in latestList" :title="item.title" :date="item.date" :image="item.image" :url="item.url"></card>
+      <a href="javascript:;" class="button">更多</a>
+    </div>
   </layout>
 </template>
 
@@ -36,8 +39,23 @@ export default {
 </script>
 
 <style>
-div.zh-content {
+div.list {
+  max-width: 750px;
   display: inline-flex;
-  align-content: flex-start;  
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a.button {
+  width: 80%;
+  height: 40px;
+  color: #eee;
+  background: #3aa;
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
 }
 </style>

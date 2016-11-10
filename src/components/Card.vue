@@ -1,13 +1,12 @@
 <template>
-  <div class="card">
+    <a class="card" v-bind:href="url">
+      <img class="card-img" v-bind:src="image"/>
+      <div class="card-content">
+        <p>{{title}}</p>
+        <p>{{date}}</p>
+      </div>
+    </a>
     
-    <img class="card-img" v-bind:src="image"/>
-    <div class="card-content">
-      <p>{{title}}</p>
-      <p>{{date}}</p>
-    </div>
-    
-  </div>
 </template>
 
 <script>
@@ -15,16 +14,18 @@ export default {
   props: [
     'title',
     'date',
-    'image'
+    'image',
+    'url'
   ]
 }
 </script>
 
 <style scoped>
-div.card {
+.card {
   height: 100px;
   margin: 10px 10px 0 10px;
   background-color: #fff;
+  color: #2c3e50;
 
   /** 圆角 **/
   border-radius: 4px;
@@ -35,7 +36,7 @@ div.card {
   box-shadow: 1px 1px 2px #bbb;
 
   /** flex 布局 **/
-  flex: 1 1 280px;
+  flex: 1 1 300px;
   display: flex;
   align-items: center;
 }

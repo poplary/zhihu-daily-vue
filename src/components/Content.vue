@@ -16,5 +16,7 @@ div.zh-content {
   display: inline-flex;
   align-items: align-content;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 </style>

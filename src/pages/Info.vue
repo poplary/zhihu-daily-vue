@@ -1,6 +1,8 @@
 <template>
-  <layout>
-    info
+  <layout title="其他">
+    <div class="card">
+      未完待续
+    </div>
   </layout>
 </template>
 

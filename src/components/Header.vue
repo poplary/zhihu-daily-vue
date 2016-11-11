@@ -32,7 +32,7 @@ header {
   width: 100%;
   background-color: #41b883;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 500;
   color: #eee;
 
   /** 圆角 **/

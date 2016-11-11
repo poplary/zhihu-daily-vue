@@ -2,8 +2,11 @@
   <layout title="知乎日报">
     <div class="list">
       <card v-for="item in latestList" :title="item.title" :date="item.date" :image="item.image" :url="item.url"></card>
-      <a href="javascript:;" class="button">更多</a>
     </div>
+    
+    <div v-infinite-scroll="loadMore" infinite-scroll-disabled="busy" infinite-scroll-distance="10">
+    </div>
+    
   </layout>
 </template>
 
@@ -15,7 +18,8 @@ import { mapActions } from 'vuex'
 export default {
   data () {
     return {
-      latestList: []
+      latestList: [],
+      busy: false
     }
   },
   components: {
@@ -23,9 +27,18 @@ export default {
     card
   },
   mounted () {
-    this.$store.dispatch('getLatestList')
+    // this.$store.dispatch('getLatestList')
   },
   methods: {
+    loadMore () {
+      this.busy = true
+
+      setTimeout(() => {
+        this.getLatestList(true)
+      }, 500)
+      this.busy = false
+    },
+
     ...mapActions([
       'getLatestList'
     ])
@@ -39,14 +52,6 @@ export default {
 </script>
 
 <style>
-div.list {
-  max-width: 750px;
-  display: inline-flex;
-  align-content: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 a.button {
   width: 80%;
   height: 40px;

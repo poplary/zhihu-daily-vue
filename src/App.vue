@@ -27,4 +27,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+div.list {
+  max-width: 750px;
+  display: inline-flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100px;
+  margin: 10px 10px 0 10px;
+  background-color: #fff;
+  color: #2c3e50;
+
+  /** 圆角 **/
+  border-radius: 4px;
+
+  /** 阴影 **/
+  -webkit-box-shadow: 1px 1px 2px #bbb;
+  -moz-box-shadow: 1px 1px 2px #bbb;
+  box-shadow: 1px 1px 2px #bbb;
+
+  /** flex 布局 **/
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+
+img.card-img {
+  border: 2px solid #ddd;
+  height: 80%;
+  margin-left: 10px;
+}
+
+div.card-content {
+  padding-left: 20px;
+  padding-right: 10px;
+}
 </style>

@@ -8,7 +8,9 @@ let state = {
   zhihuDailyCurrentPage: 0,
   zhihuDailyNextUrl: '',
   historyList: [],
-  historyDate: ''
+  historyDate: '',
+  lastDay: '',
+  nextDay: ''
 }
 
 let mutations = {
@@ -24,6 +26,8 @@ let mutations = {
 
   [types.GET_HISTORY_LIST] (state, response) {
     state.historyList = response.data.data
+    state.lastDay = response.data.meta.lastDay
+    state.nextDay = response.data.meta.nextDay
   },
 
   [types.SET_HISTORY_DATE] (state, date) {

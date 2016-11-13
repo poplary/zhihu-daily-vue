@@ -52,15 +52,4 @@ export default {
 </script>
 
 <style>
-a.button {
-  width: 80%;
-  height: 40px;
-  color: #eee;
-  background: #3aa;
-  margin-top: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-}
 </style>

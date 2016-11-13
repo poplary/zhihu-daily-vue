@@ -17,6 +17,9 @@ let today = dateObj.getFullYear() + '-' + month + '-' + date
 let tomorrow = dateObj.getFullYear() + '-' + month + '-' + tomorrowDate
 
 export default {
+  props: [
+    'anotherDay'
+  ],
   data () {
     return {
       startDate: {
@@ -79,6 +82,11 @@ export default {
         this.getHistoryList()
       },
       deep: true
+    },
+    anotherDay: {
+      handler: function (val, oldVal) {
+        this.date.time = val
+      }
     }
   }
 
@@ -92,6 +100,7 @@ export default {
 
 div.card {
   height: 40px;
+  width: 80%;
   justify-content: center;
 }
 </style>

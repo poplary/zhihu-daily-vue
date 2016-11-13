@@ -14,6 +14,14 @@ export const historyDate = (state) => {
   return state.zhihu.historyDate
 }
 
+export const lastDay = (state) => {
+  return state.zhihu.lastDay
+}
+
+export const nextDay = (state) => {
+  return state.zhihu.nextDay
+}
+
 export const routePath = (state) => {
   return state.zhihu.route.path
 }

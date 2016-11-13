@@ -28,8 +28,9 @@ body {
   color: #2c3e50;
 }
 
-div.list {
+.list {
   max-width: 750px;
+  width: 100%;
   display: inline-flex;
   align-content: flex-start;
   justify-content: center;
@@ -65,5 +66,18 @@ img.card-img {
 div.card-content {
   padding-left: 20px;
   padding-right: 10px;
+}
+
+a.button {
+  width: 80%;
+  height: 40px;
+  color: #eee;
+  background: #30c095;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin: 10px 10px 10px 10px;
+  border-radius: 2px;
 }
 </style>

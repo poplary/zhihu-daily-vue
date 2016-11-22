@@ -1,17 +1,18 @@
 <template>
   <footer>
-    <router-link class="footer-tab" v-bind:to="{ name: 'index'}" active-class="active" exact>
-      <i class="fa fa-lg fa-home"></i>
-    </router-link>
+    <div class="footer">
+      <router-link class="footer-tab" v-bind:to="{ name: 'index'}" active-class="active" exact>
+        <i class="fa fa-lg fa-home"></i>
+      </router-link>
 
-    <router-link class="footer-tab" v-bind:to="{ name: 'history'}" active-class="active" exact>
-      <i class="fa fa-lg fa-list"></i>
-    </router-link>
+      <router-link class="footer-tab" v-bind:to="{ name: 'history'}" active-class="active" exact>
+        <i class="fa fa-lg fa-list"></i>
+      </router-link>
 
-    <router-link class="footer-tab" v-bind:to="{ name: 'info'}" active-class="active" exact>
-      <i class="fa fa-lg fa-user"></i>
-    </router-link>
-
+      <router-link class="footer-tab" v-bind:to="{ name: 'info'}" active-class="active" exact>
+        <i class="fa fa-lg fa-user"></i>
+      </router-link>
+    </div>
   </footer>
 </template>
 
@@ -32,8 +33,19 @@ footer {
 
   /** flex 布局 **/
   display: inline-flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   
+}
+
+div.footer {
+
+  flex: 1;
+  max-width: 750px;
+  
+  /** flex 布局 **/
+  display: inline-flex;
+  align-items: stretch;
 }
 
 .footer-tab {

@@ -57,17 +57,6 @@ body {
   align-items: center;
 }
 
-img.card-img {
-  border: 2px solid #ddd;
-  height: 80%;
-  margin-left: 10px;
-}
-
-div.card-content {
-  padding-left: 20px;
-  padding-right: 10px;
-}
-
 a.button {
   width: 80%;
   height: 40px;
